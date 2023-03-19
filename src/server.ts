@@ -19,7 +19,7 @@ server.use(mainrouter)
 server.use((req:Request,res:Response)=>{
     res.send('PAGINA NÃO ENCONTRADA')
 });
-server.listen(4040,()=>{
+server.listen(process.env.PORT,()=>{
     console.log("servidor on");
     
 })
